@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIVA KESHAV THATIPELLY - Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="portfolio_styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">SHIVA KESHAV THATIPELLY</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#softskills">Soft Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#visualizations">Visualizations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="profile-photo-container">
+                    <img src="shiva keshav.jpg" alt="SHIVA KESHAV THATIPELLY - Data Analyst" class="profile-photo">
+                </div>
+                <h1>SHIVA KESHAV THATIPELLY</h1>
+                <p class="hero-title">Data Analyst | Python | Pandas | Excel | Tableau</p>
+                <p class="hero-subtitle">Turning raw data into actionable insights that drive business decisions</p>
+                <a href="#charts" class="cta-button">View Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a data analyst who helps businesses understand their data. I use Python, Excel, and Tableau to find
+                important patterns and create clear reports. My goal is to show you what the data means so you can make
+                better decisions.</p>
+            <p>I love working with numbers and turning them into helpful information. I clean data, analyze it, and make
+                charts that are easy to understand. I believe good data work should be simple and useful for everyone.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Python</h3>
+                    <p>Data analysis, scripting, automation</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Pandas</h3>
+                    <p>Data manipulation, cleaning, aggregation</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Excel</h3>
+                    <p>Advanced formulas, pivot tables, VBA</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Tableau</h3>
+                    <p>Interactive dashboards, data visualization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soft Skills Section -->
+    <section id="softskills" class="soft-skills">
+        <div class="container">
+            <h2>Soft Skills</h2>
+            <div class="soft-skills-grid">
+                <div class="soft-skill-card">
+                    <h3>Communication</h3>
+                    <p>Explain data and findings in simple words that everyone can understand</p>
+                </div>
+                <div class="soft-skill-card">
+                    <h3>Problem Solving</h3>
+                    <p>Find problems in data and solve them using facts and numbers</p>
+                </div>
+                <div class="soft-skill-card">
+                    <h3>Attention to Detail</h3>
+                    <p>Check data carefully to make sure everything is correct and accurate</p>
+                </div>
+                <div class="soft-skill-card">
+                    <h3>Collaboration</h3>
+                    <p>Work well with different teams to reach goals together</p>
+                </div>
+                <div class="soft-skill-card">
+                    <h3>Continuous Learning</h3>
+                    <p>Always learn and use new tools and methods in my work</p>
+                </div>
+                <div class="soft-skill-card">
+                    <h3>AI & Chatbots</h3>
+                    <p>Use ChatGPT and AI tools to enhance workflow, automate tasks, and improve productivity</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2>Certifications</h2>
+            <div class="certifications-grid">
+                <a href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_69b823b838d4b57514f81ba7_1773729917263_completion_certificate.pdf"
+                    target="_blank" class="cert-card">
+                    <div class="cert-icon">📊</div>
+                    <h3>Data Analytics Job Simulation</h3>
+                    <p class="cert-issuer">Deloitte</p>
+                    <p class="cert-date">Completed: March 17th, 2026</p>
+                    <p class="cert-date">Credential ID: 8NZGqfpCDBHqRmF7H</p>
+                </a>
+                <a href="https://www.credly.com/badges/6e3b357f-76dd-4971-aafd-3de1e68bd452" target="_blank"
+                    class="cert-card">
+                    <div class="cert-icon">📈</div>
+                    <h3>Python Essentials 1</h3>
+                    <p class="cert-issuer">Cisco</p>
+                    <p class="cert-date">Completed: August 30, 2025</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Visualizations Section -->
+    <section id="charts" class="charts-section">
+        <div class="container">
+            <h2>Data Visualizations</h2>
+
+            <div class="charts-grid">
+                <div class="chart-container">
+                    <h3>Monthly Revenue Growth</h3>
+                    <canvas id="revenueChart"></canvas>
+                </div>
+
+                <div class="chart-container">
+                    <h3>Sales by Product Category</h3>
+                    <canvas id="categoryChart"></canvas>
+                </div>
+
+                <div class="chart-container">
+                    <h3>Customer Segments</h3>
+                    <canvas id="segmentChart"></canvas>
+                </div>
+
+                <div class="chart-container">
+                    <h3>Regional Sales Comparison</h3>
+                    <canvas id="regionalChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <h2>Resume</h2>
+            <p>Download my full resume to see detailed experience and qualifications.</p>
+            <a href="resume.pdf" class="resume-button" download>Download Resume (PDF)</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Let's connect and discuss how I can add value to your organization.</p>
+
+            <div class="contact-grid">
+                <a href="mailto:shivakeshav046@gmail.com" class="contact-card">
+                    <h3>Email</h3>
+                    <p>shivakeshav046@gmail.com</p>
+                </a>
+
+                <a href="https://www.linkedin.com/in/thatipelly-shiva-keshav-44b150381" target="_blank"
+                    class="contact-card">
+                    <h3>LinkedIn</h3>
+                    <p>linkedin.com/in/thatipelly-shiva-keshav-44b150381</p>
+                </a>
+
+                <a href="https://github.com" target="_blank" class="contact-card">
+                    <h3>GitHub</h3>
+                    <p>github.com/shiva-keshav</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 SHIVA KESHAV THATIPELLY. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="portfolio_script.js"></script>
+</body>
+
+</html>
