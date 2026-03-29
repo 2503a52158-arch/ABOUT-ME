@@ -313,5 +313,5 @@ document.querySelectorAll('.skill-card, .soft-skill-card, .cert-card, .chart-con
 // ===========================
 document.querySelector('.resume-button').addEventListener('click', (e) => {
     e.preventDefault();
-    alert('Resume download would be initiated here. In a real implementation, this would trigger a PDF download.');
+    alert('');
 });
